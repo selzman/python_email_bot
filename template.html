@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moriai</title>
+
+    <style>
+        body{
+            background-color: #222222 !important;
+            color: white !important;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+        }
+        .email_content {
+            background-color: rgba(0, 0, 0, 0.52);
+            margin: 5%;
+
+            padding: 20px !important;
+            border-radius: 20px;
+            
+
+        }
+        .email_content img {
+            border-radius: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        .email_content p{
+            font-family: Arial, sans-serif;            
+            margin: 25px 5px;
+            font-size: 15px;
+            
+            
+        }
+
+        .email_content a{
+            padding: 10px;
+            border: 5px solid rgb(122, 2, 122);
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 17px;
+            text-decoration: none;
+          
+            
+      
+        }
+
+         
+        .email_content h3{
+            font-weight: bolder;
+        } 
+        
+        .socialmedia{
+            display: flex;
+
+            margin: 0 10%;
+
+        }
+       
+        .socialmedia a {
+            text-decoration: none;
+            color: white;
+            margin-right: 25px;
+          
+        }
+
+        .socialmedia a img{
+            width: 50px;
+            height: 50px;
+        }
+        .head_col{
+            color: rgb(229, 233, 9);
+            text-align: center;
+        }
+        
+        .site_link{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+     {% for photo in photos %}
+    <div class="email_content">
+        <div>
+
+            <img src="cid:{{ photo.cid }}" alt="Photo {{ photo.id }}" />
+            
+            <h3>
+                {{photo.title}}
+            </h3>  
+            <p>{{ photo.message }}</p>
+        </div>
+          
+<div class="site_link">
+    <a href="https://moriai.org">
+        view site
+    </a>
+</div>     
+  
+    </div>
+     {% endfor %}
+
+
+     <h2 class="head_col">social media links</h2>
+    <div class="socialmedia">
+        <div class="telegram">
+            <a href="https://t.me/moriai_org">
+
+
+                <img src="http://moriai.org/s/telegram.png" alt="">
+            
+            </a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/moriai_org?igsh=enhudXl5MDZiMW14">
+
+
+                <img src="http://moriai.org/s/instageam.png" alt="">
+
+            </a>
+        </div>
+
+        <div class="twitter">
+            <a href="https://x.com/moriai175702?t=7MZLInWnSXjUK9cwk699lQ&s=09">
+
+
+                <img src="http://moriai.org/s/x.png" alt="">
+
+            </a>
+        </div>
+
+        <div class="youtube">
+            <a href="https://youtube.com/@user-ip5um7vh4h?si=CCnWgxATgqVNC3ft">
+
+
+                <img src="http://moriai.org/s/youtube.png" alt="">
+
+            </a>
+        </div>
+
+        <div class="discord">
+            <a href="https://discord.gg/U6m4zWfZ">
+
+                <img src="http://moriai.org/s/discord.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
