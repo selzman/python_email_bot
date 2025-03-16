@@ -24,7 +24,7 @@
 برای سوالات یا پشتیبانی، می‌توانید:
 
 - http://t.me/sourcman
-- از طریق ایمیل به [arminyarali1@example.com](mailto:arminyarali1@gmail.com) با ما تماس بگیرید.
+- از طریق ایمیل به [arminyarali1@gmail.com](mailto:arminyarali1@gmail.com) با ما تماس بگیرید.
 
 ---
 
